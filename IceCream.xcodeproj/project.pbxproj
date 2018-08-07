@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4136B129211A2A2E00E32210 /* IceCreamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4136B128211A2A2E00E32210 /* IceCreamTests.swift */; };
+		4136B12B211A2A2E00E32210 /* IceCream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6743F712202B0F0F00912163 /* IceCream.framework */; };
+		4136B132211A2AC700E32210 /* CloudContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4136B131211A2AC700E32210 /* CloudContainer.swift */; };
 		41767BFD209863BA00178513 /* SyncEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41767BFC209863BA00178513 /* SyncEngine.swift */; };
 		6743F717202B0F0F00912163 /* IceCream.h in Headers */ = {isa = PBXBuildFile; fileRef = 6743F715202B0F0F00912163 /* IceCream.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6743F726202B0F9400912163 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 6743F71E202B0F9400912163 /* .gitkeep */; };
@@ -23,7 +26,21 @@
 		67FE3211202B505600125432 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67FE3210202B505600125432 /* RealmSwift.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		4136B12C211A2A2E00E32210 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6743F709202B0F0F00912163 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6743F711202B0F0F00912163;
+			remoteInfo = IceCream;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		4136B126211A2A2E00E32210 /* IceCreamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IceCreamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4136B128211A2A2E00E32210 /* IceCreamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCreamTests.swift; sourceTree = "<group>"; };
+		4136B12A211A2A2E00E32210 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4136B131211A2AC700E32210 /* CloudContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudContainer.swift; sourceTree = "<group>"; };
 		41767BFC209863BA00178513 /* SyncEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncEngine.swift; sourceTree = "<group>"; };
 		6743F712202B0F0F00912163 /* IceCream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IceCream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6743F715202B0F0F00912163 /* IceCream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IceCream.h; sourceTree = "<group>"; };
@@ -43,6 +60,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4136B123211A2A2E00E32210 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4136B12B211A2A2E00E32210 /* IceCream.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6743F70E202B0F0F00912163 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -55,10 +80,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4136B127211A2A2E00E32210 /* IceCreamTests */ = {
+			isa = PBXGroup;
+			children = (
+				4136B128211A2A2E00E32210 /* IceCreamTests.swift */,
+				4136B12A211A2A2E00E32210 /* Info.plist */,
+			);
+			path = IceCreamTests;
+			sourceTree = "<group>";
+		};
 		6743F708202B0F0F00912163 = {
 			isa = PBXGroup;
 			children = (
 				6743F714202B0F0F00912163 /* IceCream */,
+				4136B127211A2A2E00E32210 /* IceCreamTests */,
 				6743F713202B0F0F00912163 /* Products */,
 				67FE320D202B505000125432 /* Frameworks */,
 			);
@@ -68,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				6743F712202B0F0F00912163 /* IceCream.framework */,
+				4136B126211A2A2E00E32210 /* IceCreamTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,6 +132,7 @@
 				6743F725202B0F9400912163 /* Notification+Name.swift */,
 				41767BFC209863BA00178513 /* SyncEngine.swift */,
 				6767988E20BCEEB0008F98AD /* SyncObject.swift */,
+				4136B131211A2AC700E32210 /* CloudContainer.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -123,6 +160,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		4136B125211A2A2E00E32210 /* IceCreamTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4136B130211A2A2E00E32210 /* Build configuration list for PBXNativeTarget "IceCreamTests" */;
+			buildPhases = (
+				4136B122211A2A2E00E32210 /* Sources */,
+				4136B123211A2A2E00E32210 /* Frameworks */,
+				4136B124211A2A2E00E32210 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4136B12D211A2A2E00E32210 /* PBXTargetDependency */,
+			);
+			name = IceCreamTests;
+			productName = IceCreamTests;
+			productReference = 4136B126211A2A2E00E32210 /* IceCreamTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		6743F711202B0F0F00912163 /* IceCream */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6743F71A202B0F0F00912163 /* Build configuration list for PBXNativeTarget "IceCream" */;
@@ -147,9 +202,14 @@
 		6743F709202B0F0F00912163 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "蔡越";
 				TargetAttributes = {
+					4136B125211A2A2E00E32210 = {
+						CreatedOnToolsVersion = 9.4.1;
+						ProvisioningStyle = Automatic;
+					};
 					6743F711202B0F0F00912163 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
@@ -169,11 +229,19 @@
 			projectRoot = "";
 			targets = (
 				6743F711202B0F0F00912163 /* IceCream */,
+				4136B125211A2A2E00E32210 /* IceCreamTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4136B124211A2A2E00E32210 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6743F710202B0F0F00912163 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -185,6 +253,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4136B122211A2A2E00E32210 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4136B129211A2A2E00E32210 /* IceCreamTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6743F70D202B0F0F00912163 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -195,6 +271,7 @@
 				6773DF0120BD2CBD0019FF3A /* CKRecordConvertible.swift in Sources */,
 				6773DF0320BD2CE20019FF3A /* Syncable.swift in Sources */,
 				6773DF0020BD2CBD0019FF3A /* CKRecordRecoverable.swift in Sources */,
+				4136B132211A2AC700E32210 /* CloudContainer.swift in Sources */,
 				6743F72D202B0F9400912163 /* Notification+Name.swift in Sources */,
 				6743F729202B0F9400912163 /* Cream.swift in Sources */,
 				6743F728202B0F9400912163 /* ErrorHandler.swift in Sources */,
@@ -204,7 +281,49 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		4136B12D211A2A2E00E32210 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6743F711202B0F0F00912163 /* IceCream */;
+			targetProxy = 4136B12C211A2A2E00E32210 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		4136B12E211A2A2E00E32210 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = IceCreamTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.soledad.http.IceCream.IceCreamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4136B12F211A2A2E00E32210 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = IceCreamTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.soledad.http.IceCream.IceCreamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		6743F718202B0F0F00912163 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -369,6 +488,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4136B130211A2A2E00E32210 /* Build configuration list for PBXNativeTarget "IceCreamTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4136B12E211A2A2E00E32210 /* Debug */,
+				4136B12F211A2A2E00E32210 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		6743F70C202B0F0F00912163 /* Build configuration list for PBXProject "IceCream" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
