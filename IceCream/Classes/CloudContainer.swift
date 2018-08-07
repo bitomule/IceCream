@@ -1,7 +1,7 @@
 import CloudKit
 
 public protocol CloudContainer {
-    var privateCloudDatabase: CKDatabase { get }
+    var privateDatabase: CloudDatabase { get }
     func accountStatus(completionHandler: @escaping (CKAccountStatus, Error?) -> Void)
     func fetchAllLongLivedOperationIDs(completionHandler: @escaping ([String]?, Error?) -> Void)
     func fetchLongLivedOperation(withID operationID: String, completionHandler: @escaping (CKOperation?, Error?) -> Void)
@@ -9,4 +9,8 @@ public protocol CloudContainer {
 }
 
 
-extension CKContainer: CloudContainer { }
+extension CKContainer: CloudContainer {
+    public var privateDatabase: CloudDatabase {
+        return privateCloudDatabase
+    }
+}

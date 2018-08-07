@@ -22,8 +22,8 @@ public final class SyncEngine {
     private var notificationToken: NotificationToken?
 
     /// Indicates the private database in default container
-    private lazy var privateDatabase: CKDatabase = {
-        return cloudContainer.privateCloudDatabase
+    private lazy var privateDatabase: CloudDatabase = {
+        return cloudContainer.privateDatabase
     }()
     
     private let errorHandler = ErrorHandler()
